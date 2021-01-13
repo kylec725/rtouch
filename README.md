@@ -11,15 +11,12 @@ For Arch Linux users:
 sudo pacman -S go
 ```
 
-
 Set your GOPATH environment variable and add your GOPATH bin directory to your system path.
-
 
 Clone this directory:
 ```
 git clone https://github.com/kylec725/rtouch.git
 ```
-
 
 Go into the `rtouch` directory and run:
 ```
