@@ -4,24 +4,36 @@ new files while making the required directories for the new file.
 
 rtouch is inspired by [Advanced New File](https://github.com/tanrax/terminal-AdvancedNewFile)
 
-## Installation
+## Dependencies
+rtouch requires `go`
+
 Install `go` for your given distribution.
+
 For Arch Linux users:
 ```
 sudo pacman -S go
 ```
 
-Set your `GOPATH` environment variable and add `$GOPATH/bin` to your system path.
-
+## Installation
 Clone this directory:
 ```
 git clone https://github.com/kylec725/rtouch.git
 ```
 
+Set your `GOPATH` environment variable and add `$GOPATH/bin` to your system path.
+
 Go into the `rtouch` directory and run:
 ```
 go install
 ```
+
+---
+
+Alternatively run:
+```
+go build
+```
+and place the `rtouch` into a directory already within your system path.
 
 ## Usage
 ```
