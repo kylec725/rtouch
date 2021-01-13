@@ -5,7 +5,7 @@ new files while making the required directories for the new file.
 rtouch is inspired by [Advanced New File](https://github.com/tanrax/terminal-AdvancedNewFile)
 
 ## Dependencies
-rtouch requires `go`
+rtouch requires [go](https://github.com/golang/go)
 
 Install `go` for your given distribution.
 
