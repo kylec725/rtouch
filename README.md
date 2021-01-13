@@ -22,15 +22,15 @@ git clone https://github.com/kylec725/rtouch.git
 
 - Set your `GOPATH` environment variable and add `$GOPATH/bin` to your system path.
 Go into the `rtouch` directory and run:
-```
-go install
-```
+    ```
+    go install
+    ```
 
 - Alternatively run:
-```
-go build
-```
-Then place the `rtouch` executable into a directory already within your system path.
+    ```
+    go build
+    ```
+    Then place the `rtouch` executable into a directory already within your system path.
 
 ## Usage
 ```
