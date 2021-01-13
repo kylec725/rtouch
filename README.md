@@ -20,23 +20,17 @@ Clone this directory:
 git clone https://github.com/kylec725/rtouch.git
 ```
 
-- Set your `GOPATH` environment variable and add `$GOPATH/bin` to your system path.
+Set your `GOPATH` environment variable and add `$GOPATH/bin` to your system path.
 Go into the `rtouch` directory and run:
-    ```
-    go install
-    ```
-
-- Alternatively run:
-    ```
-    go build
-    ```
-    Then place the `rtouch` executable into a directory already within your system path.
+```
+go install
+```
 
 ## Usage
 ```
 rtouch [path]
 ```
-Terminating a path with / will create/touch a directory instead of a file.
+Terminating a path with `/` will create or touch a directory instead of a file.
 
 ### Examples
 Touch a single file
