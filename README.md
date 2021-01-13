@@ -6,24 +6,25 @@ rtouch is inspired by [Advanced New File](https://github.com/tanrax/terminal-Adv
 
 ## Installation
 Install go for your given distribution.
-
 For Arch Linux users:
 ```
 sudo pacman -S go
 ```
 
-Set your GOPATH and add your GOPATH bin directory to your system path.
+
+Set your GOPATH environment variable and add your GOPATH bin directory to your system path.
+
 
 Clone this directory:
 ```
 git clone https://github.com/kylec725/rtouch.git
 ```
 
-CD into the rtouch directory and run:
+
+Go into the `rtouch` directory and run:
 ```
 go install
 ```
-
 
 ## Usage
 ```
