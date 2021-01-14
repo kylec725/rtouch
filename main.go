@@ -9,17 +9,17 @@ import (
 )
 
 var (
-    version = *flag.Bool("version", false, "Show version number")
+    version = flag.Bool("version", false, "Show version number")
 )
 
 func init() {
-    flag.BoolVar(&version, "v", false, "Show version number")
+    flag.BoolVar(version, "v", false, "Show version number")
     flag.Parse()
 }
 
 func main() {
-    if version {
-        fmt.Println("rtouch v1.00")
+    if *version {
+        fmt.Println("rtouch 1.00")
         os.Exit(0)
     }
 
