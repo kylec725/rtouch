@@ -5,9 +5,24 @@ import (
     "os"
     "path/filepath"
     "time"
+    "flag"
 )
 
+var (
+    version = *flag.Bool("version", false, "Show version number")
+)
+
+func init() {
+    flag.BoolVar(&version, "v", false, "Show version number")
+    flag.Parse()
+}
+
 func main() {
+    if version {
+        fmt.Println("rtouch v1.00")
+        os.Exit(0)
+    }
+
     for _, arg := range os.Args[1:] {
         err := touch(arg)
         if err != nil {
