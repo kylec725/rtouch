@@ -5,19 +5,17 @@ import (
     "os"
     "path/filepath"
     "time"
-    "flag"
+
+    flag "github.com/spf13/pflag"
 )
 
 var (
-    version = flag.Bool("version", false, "Show version number")
+    version = flag.BoolP("version", "v", false, "Show version number")
 )
 
-func init() {
-    flag.BoolVar(version, "v", false, "Show version number")
-    flag.Parse()
-}
-
 func main() {
+    flag.Parse()
+
     if *version {
         fmt.Println("rtouch 1.00")
         os.Exit(0)
