@@ -10,13 +10,16 @@ import (
 )
 
 var (
-    version = flag.BoolP("version", "v", false, "Show version number")
+    version bool
 )
 
-func main() {
+func init() {
+    flag.BoolVarP(&version, "version", "v", false, "Show version number")
     flag.Parse()
+}
 
-    if *version {
+func main() {
+    if version {
         fmt.Println("rtouch 1.00")
         os.Exit(0)
     }
