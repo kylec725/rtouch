@@ -34,7 +34,6 @@ func main() {
 
 func touch(path string) error {
     var err error
-
     // Create directories recursively
     if dir := filepath.Dir(path); dir != "" {
         err = os.MkdirAll(dir, 0755)
@@ -42,7 +41,6 @@ func touch(path string) error {
             return err
         }
     }
-
     // Touch the file or directory
     if _, err = os.Stat(path); os.IsNotExist(err) {
         file, err := os.Create(path)
@@ -57,6 +55,5 @@ func touch(path string) error {
             return err
         }
     }
-
     return nil
 }
